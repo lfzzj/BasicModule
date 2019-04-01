@@ -1,0 +1,12 @@
+apply from: config
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation appcompatV7
+
+    implementation arouterApi
+    annotationProcessor arouterCompiler
+
+    api project(":modulePublic:common")
+}

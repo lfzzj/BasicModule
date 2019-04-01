@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--
+        app:cardBackgroundColor=""设置背景色
+        app:cardMaxElevation="" 设置Z轴最大高度值
+        app:cardUseCompatPadding="" 是否使用CompatPadding
+        app:cardPreventCornerOverlap="" 是否使用PreventCornerOverlap
+        app:contentPadding="" 内容的Padding
+        app:contentPaddingTop="" 内容的上Padding
+        app:contentPaddingLeft="" 内容的左Padding
+        app:contentPaddingRight="" 内容的右Padding
+        app:contentPaddingBottom="" 内容的下Padding
+     -->
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="20dp"
+        app:cardMaxElevation="10dp"
+        app:cardElevation="20dp">
+
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:background="@drawable/common_face" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="测试" />
+
+    </android.support.v7.widget.CardView>
+
+
+
+</LinearLayout>

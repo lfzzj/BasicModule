@@ -1,0 +1,19 @@
+apply from: config
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation appcompatV7
+    implementation constraintLayout
+
+    implementation arouterApi
+    annotationProcessor arouterCompiler
+
+    implementation butterknife
+    annotationProcessor butterknifeCompiler
+
+    api project(":moduleCore:home")
+    api project(":moduleCore:frd")
+    api project(":moduleCore:find")
+    api project(":moduleCore:user")
+
+}

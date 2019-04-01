@@ -1,0 +1,14 @@
+include ':app',
+        //业务逻辑层
+        ':moduleCore:home', ':moduleCore:frd', ':moduleCore:find', ':moduleCore:user',
+
+        //公共层（主要存放：公共布局文件/公共资源文件/公共实体类/自定义View）
+        ":modulePublic:common",
+
+        //第三方公共功能,支付，激光推送等
+        ':modulePublic:alipay', ':modulePublic:jpush',
+
+        //系统公共层(其他系统层都被此引用)
+        ':moduleSystem:base',
+        //数据库
+        ':moduleSystem:greenDao'

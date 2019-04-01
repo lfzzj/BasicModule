@@ -1,0 +1,23 @@
+apply from: config
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation appcompatV7
+
+    implementation butterknife
+    annotationProcessor butterknifeCompiler
+
+    implementation arouterApi
+    annotationProcessor arouterCompiler
+
+    implementation design
+    implementation rvadapter
+
+    implementation cardview
+
+    api project(":modulePublic:common")
+
+
+}
